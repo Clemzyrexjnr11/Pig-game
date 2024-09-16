@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav{
+  height: 50px;
+  width: 95%;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  gap: 10px;
+  color: white;
+  font-family: monospace;
+}
+.inputwinningScore{
+  border: none;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.game_body_holder {
+  height: 90vh;
+  width: 90vw;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 5px 5px rgb(71, 69, 69);
+}
+.player_1_div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.player_2_div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* background: green; */
+}
+.player_name {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.score {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.current_score {
+  height: 70px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  color: white;
+}
+.dice_img_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  right: 42%;
+  display: none;
+  /* background: green; */
+}
+img {
+  height: 70px;
+  width: 70px;
+  /* display: none; */
+}
+
+i {
+  color: red;
+  font-size: 25px;
+  font-weight: lighter;
+}
+button {
+  height: fit-content;
+  width: 150px;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: transparent;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  font-size: 18px;
+  transition: 1s;
+}
+.new_btn {
+  top: 0;
+  right: 45%;
+  margin-top: 15px;
+}
+.roll_dice {
+  top: 350px;
+  right: 45%;
+}
+.hold_dice {
+  top: 420px;
+  right: 45%;
+}
+.winningScore{
+  position: absolute;
+  top: 480px;
+  right: 43%;
+  padding: 10px;
+  height: 30px;
+  border: 2px dotted orangered;
+}
+.active {
+  background: rgb(233, 231, 231);
+  box-shadow: 5px 5px 0px orangered;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice game</title>
+    <link rel="stylesheet" href="./fontanwome/fontawesome-6/css/all.css" />
+    <link rel="stylesheet" href="Dicegame.css" />
+  </head>
+  <body>
+    <nav>
+      <p>Default winningScore: <span class="def_winningScore">100</span></p>
+    </nav>
+    <div class="game_body_holder">
+      <button class="new_btn"><i class="far fa-plus"></i>NEW GAME</button>
+      <div class="player_1_div">
+        <p class="player_name" id="player_1">Player 1</p>
+        <p class="score" id="score_1">12</p>
+        <div class="current_score">
+          <p>Current</p>
+          <p
+            class="current_score_1"
+            style="font-size: 25px; font-weight: lighter"
+          >
+            6
+          </p>
+        </div>
+      </div>
+      <div class="dice_img_holder">
+        <img src="./images/dice-5.jpg" alt="" class="dice_img_1" />
+        <img src="./images/dice-5.jpg" alt="" class="dice_img_2" />
+      </div>
+
+      <button class="roll_dice"><i class="fas fa-dice"></i>ROLL DICE</button>
+      <button class="hold_dice"><i class="fas fa-download"></i>HOLD</button>
+      <input type="number" class="winningScore" placeholder="Input winningScore">
+      <div class="player_2_div">
+        <p class="player_name" id="player_2">Player 2</p>
+        <p class="score" id="score_2">17</p>
+        <div class="current_score">
+          <p>Current</p>
+          <p
+            class="current_score_2"
+            style="font-size: 25px; font-weight: lighter"
+          >
+            4
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="Dicegame.js"></script>
+  </body>
+  <!-- <script>
+  
+
+  </script> -->
+</html>
